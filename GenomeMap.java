@@ -10,8 +10,8 @@ public class CgviewTest1 implements CgviewConstants {
 {
         int length = 2766;
         Cgview cgview = new Cgview(length);
-
-
+	
+	//Getting data from GenBank
         File inputFile = new File("/c/Users/Nguyen Ngoc Van Anh/ACM-Research-Coding-Challenge-S21/Genome.gb");
         FileInputStream inStream = new FileInputStream(inputFile);
         Scanner sc = new Scanner(inStream);
@@ -24,11 +24,11 @@ public class CgviewTest1 implements CgviewConstants {
             }
         sequence = sequence.substring(sequence.indexOf("ORIGIN") + 6, sequence.indexOf("//"));
 
-        //some optional settings
+        //Circle settings
         cgview.setWidth(600);
         cgview.setHeight(600);
         cgview.setBackboneRadius(140.0f);
-cgview.setTitle("Tomato Curly Scunt Virus");
+        cgview.setTitle("Tomato Curly Scunt Virus");
         cgview.setLabelPlacementQuality(5);
         cgview.setShowWarning(false);
         cgview.setLabelLineLength(15.0d);
@@ -43,15 +43,12 @@ cgview.setTitle("Tomato Curly Scunt Virus");
         legendItem.setLabel("Tomato Curly Scunt Virus");
         legendItem.setFont(new Font("SansSerif", Font.BOLD + Font.ITALIC, 22));
 
-        //create FeatureSlots to hold sequence features
         FeatureSlot directSlot0 = new FeatureSlot(cgview, DIRECT_STRAND);
-        //FeatureSlot directSlot1 = new FeatureSlot(cgview, DIRECT_STRAND);
-        //FeatureSlot reverseSlot0 = new FeatureSlot(cgview, REVERSE_STRAND);
 
-        //Features to add to the FeatureSlots
         Feature feature0 = new Feature(directSlot0, "A");
         feature0.setColor(Color.blue);
-     Feature feature1 = new Feature(directSlot0, "C");
+
+        Feature feature1 = new Feature(directSlot0, "C");
         feature1.setColor(Color.red);
 
         Feature feature2 = new Feature(directSlot0, "G");
@@ -60,8 +57,6 @@ cgview.setTitle("Tomato Curly Scunt Virus");
         Feature feature3 = new Feature(directSlot0, "T");
         featurre3.setColor(Color.yellow);
 
-
-        //create random sequence features
         int num = sequence.length();
         for (int i = 1; i < num - 1; i = i + 1) {
             String temp = sequence.substring(i, i+1);
