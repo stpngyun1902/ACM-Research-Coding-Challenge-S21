@@ -22,3 +22,11 @@ Genome analysis is the identification of genomic features such as gene expressio
 **You may use any programming language you feel most comfortable. We recommend Python because it is the easiest to implement. You're allowed to use any library you want to implement this**, just document which ones you used in this README file. Try to complete this as soon as possible.
 
 Regardless if you can or cannot answer the question, provide a short explanation of how you got your solution or how you think it can be solved in your README.md file. However, we highly recommend giving the challenge a try, you just might learn something new!
+
+## Solution Approach
+This challenge is a hard one to me. First, it took me a while to fully understand the mission by finding out what is a Genome Map and how a GenBank file data is stored. After that, I took more time to fully understand the format of a Genome Map and how nucleotides are drawn and showed in the map. After getting a full understanding of Genome Map, I started to look for libraries or open source packages that would help me draw a map using given GenBank file. I found several packages in Python, but those packages I found do not allow me to label the map as the mission required, so I looked for more package and found CGView API one in Java, which helps me create a circular genome map with colors and labels. I am not a Java programmer so it took me a while to learn the syntax of Java briefly and then I implemented the CGView example code in Git. 
+I am still in the process of debugging and have not got to the image solution as required. However, this is how I think we should do to solve this question.
+
+## Citation
+https://pubmed.ncbi.nlm.nih.gov/15479716/
+https://github.com/paulstothard/cgview
