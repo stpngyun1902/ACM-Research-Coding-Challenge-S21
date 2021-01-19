@@ -28,5 +28,8 @@ This challenge is a hard one to me. First, it took me a while to fully understan
 I am still in the process of debugging and have not got to the image solution as required. However, this is how I think we should do to solve this question.
 
 ## Citation
+CGView citation:
 https://pubmed.ncbi.nlm.nih.gov/15479716/
+
+
 https://github.com/paulstothard/cgview
