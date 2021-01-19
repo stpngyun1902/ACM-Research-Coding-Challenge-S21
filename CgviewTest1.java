@@ -1,9 +1,9 @@
 import ca.ualberta.stothard.cgview.*;
-import java.io.*;
-import java.awt.*;
 import java.io.IOException;
 import java.util.*;
 
+import java.io.*;
+import java.awt.*;
 public class CgviewTest1 implements CgviewConstants {
 
     public static void main(String[ ] args)
@@ -55,7 +55,7 @@ public class CgviewTest1 implements CgviewConstants {
         feature2.setColor(Color.green);
 
         Feature feature3 = new Feature(directSlot0, "T");
-        featurre3.setColor(Color.yellow);
+        feature3.setColor(Color.yellow);
 
         int num = sequence.length();
         for (int i = 1; i < num - 1; i = i + 1) {
