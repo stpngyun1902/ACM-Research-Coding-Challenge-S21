@@ -25,7 +25,7 @@ Regardless if you can or cannot answer the question, provide a short explanation
 
 ## Solution Approach
 This challenge is a hard one to me. First, it took me a while to fully understand the mission by finding out what is a Genome Map and how a GenBank file data is stored. After that, I took more time to fully understand the format of a Genome Map and how nucleotides are drawn and showed in the map. After getting a full understanding of Genome Map, I started to look for libraries or open source packages that would help me draw a map using given GenBank file. I found several packages in Python, but those packages I found do not allow me to label the map as the mission required, so I looked for more package and found CGView API one in Java, which helps me create a circular genome map with colors and labels. I am not a Java programmer so it took me a while to learn the syntax of Java briefly and then I implemented the CGView example code in Git. https://paulstothard.github.io/cgview/
-I am still in the process of debugging and have not got to the image solution as required. However, this is how I think we should do to solve this question.
+I am still in the process of debugging and have not got to the image solution as required. I am still having problems with installing the package into Git Bash. However, this is how I think we should do to solve this question.
 
 ## Citation
 CGView citation:
